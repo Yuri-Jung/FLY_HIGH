@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header th:insert="header"></header>
+<!--<h3>로그인페이지</h3>-->
+<div id="login-box">
+    <div class="left">
+        <h1>로그인</h1>
+        <div class="id_pw">
+            <input type="text" name="username" placeholder="아이디" />
+            <input type="password" name="password" placeholder="비밀번호" />
+            <input type="checkbox">아이디 기억하기<br>
+            <input type="submit" name="login_submit" value="로그인" />
+            <input type="button" value="아이디찾기">
+            <input type="button" value="비밀번호찾기">
+        </div>
+    </div>
+
+    <div class="right">
+        <span class="loginwith">다음 계정으로 로그인</span>
+        <button class="social-signin Naver">Log in with Naver</button>
+        <button class="social-signin Kakao">Log in with Kakao</button>
+        <button class="social-signin Github">Log in with Github</button>
+    </div>
+    <div class="or">OR</div>
+</div>
+<footer th:insert="footer"></footer>
+</body>
+</html>
