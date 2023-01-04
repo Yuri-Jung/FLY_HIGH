@@ -30,8 +30,8 @@ public class controller {
         return "main";
     }
 
-    @RequestMapping("register")
+    @RequestMapping("signUp")
     public String register() throws Exception {
-        return "register";
+        return "signUp";
     }
 }
